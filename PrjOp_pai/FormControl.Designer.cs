@@ -196,7 +196,6 @@
             this.MinimumSize = new System.Drawing.Size(16, 118);
             this.Name = "FormControl";
             this.Text = "コントロール";
-            this.TopMost = true;
             this.Load += new System.EventHandler(this.FormControl_Load);
             this.DragDrop += new System.Windows.Forms.DragEventHandler(this.FormControl_DragDrop);
             this.DragEnter += new System.Windows.Forms.DragEventHandler(this.FormControl_DragEnter);

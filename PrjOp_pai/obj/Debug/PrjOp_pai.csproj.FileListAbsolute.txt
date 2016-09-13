@@ -1,0 +1,13 @@
+D:\gitwork\PrjOp_pai\bin\Debug\PrjHikariwoAnim.exe.config
+D:\gitwork\PrjOp_pai\bin\Debug\PrjHikariwoAnim.exe
+D:\gitwork\PrjOp_pai\bin\Debug\PrjHikariwoAnim.pdb
+D:\gitwork\PrjOp_pai\obj\Debug\PrjOp_pai.csprojResolveAssemblyReference.cache
+D:\gitwork\PrjOp_pai\obj\Debug\PrjHikariwoAnim.FormAttribute.resources
+D:\gitwork\PrjOp_pai\obj\Debug\PrjHikariwoAnim.FormImageCut.resources
+D:\gitwork\PrjOp_pai\obj\Debug\PrjHikariwoAnim.FormImageList.resources
+D:\gitwork\PrjOp_pai\obj\Debug\PrjHikariwoAnim.FormControl.resources
+D:\gitwork\PrjOp_pai\obj\Debug\PrjHikariwoAnim.FormMain.resources
+D:\gitwork\PrjOp_pai\obj\Debug\PrjHikariwoAnim.Properties.Resources.resources
+D:\gitwork\PrjOp_pai\obj\Debug\PrjOp_pai.csproj.GenerateResource.Cache
+D:\gitwork\PrjOp_pai\obj\Debug\PrjHikariwoAnim.exe
+D:\gitwork\PrjOp_pai\obj\Debug\PrjHikariwoAnim.pdb

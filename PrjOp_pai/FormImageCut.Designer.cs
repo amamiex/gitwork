@@ -231,7 +231,6 @@
             this.KeyPreview = true;
             this.Name = "FormImageCut";
             this.Text = "イメージカッター";
-            this.TopMost = true;
             this.Load += new System.EventHandler(this.FormImageCut_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormImageCut_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.FormImageCut_KeyUp);

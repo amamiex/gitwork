@@ -161,7 +161,6 @@
             this.MinimizeBox = false;
             this.Name = "FormImageList";
             this.Text = "イメージリスト";
-            this.TopMost = true;
             this.Load += new System.EventHandler(this.FormImageList_Load);
             this.DragDrop += new System.Windows.Forms.DragEventHandler(this.FormImageList_DragDrop);
             this.DragEnter += new System.Windows.Forms.DragEventHandler(this.FormImageList_DragEnter);

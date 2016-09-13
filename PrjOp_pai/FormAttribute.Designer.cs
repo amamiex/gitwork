@@ -28,474 +28,551 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
-            this.checkBox13 = new System.Windows.Forms.CheckBox();
-            this.checkBox14 = new System.Windows.Forms.CheckBox();
-            this.checkBox15 = new System.Windows.Forms.CheckBox();
-            this.checkBox16 = new System.Windows.Forms.CheckBox();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown9 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown10 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown11 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown12 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown13 = new System.Windows.Forms.NumericUpDown();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).BeginInit();
+            this.checkT = new System.Windows.Forms.CheckBox();
+            this.checkFlipH = new System.Windows.Forms.CheckBox();
+            this.checkFlipV = new System.Windows.Forms.CheckBox();
+            this.checkVisible = new System.Windows.Forms.CheckBox();
+            this.checkColor = new System.Windows.Forms.CheckBox();
+            this.checkXoff = new System.Windows.Forms.CheckBox();
+            this.checkYoff = new System.Windows.Forms.CheckBox();
+            this.checkUserText = new System.Windows.Forms.CheckBox();
+            this.checkSY = new System.Windows.Forms.CheckBox();
+            this.checkSX = new System.Windows.Forms.CheckBox();
+            this.checkRZ = new System.Windows.Forms.CheckBox();
+            this.checkRY = new System.Windows.Forms.CheckBox();
+            this.checkRX = new System.Windows.Forms.CheckBox();
+            this.checkY = new System.Windows.Forms.CheckBox();
+            this.checkX = new System.Windows.Forms.CheckBox();
+            this.UDnumYoff = new System.Windows.Forms.NumericUpDown();
+            this.UDnumXoff = new System.Windows.Forms.NumericUpDown();
+            this.UDnumT = new System.Windows.Forms.NumericUpDown();
+            this.UDnumSY = new System.Windows.Forms.NumericUpDown();
+            this.UDnumSX = new System.Windows.Forms.NumericUpDown();
+            this.UDnumRZ = new System.Windows.Forms.NumericUpDown();
+            this.UDnumRY = new System.Windows.Forms.NumericUpDown();
+            this.UDnumRX = new System.Windows.Forms.NumericUpDown();
+            this.UDnumY = new System.Windows.Forms.NumericUpDown();
+            this.UDnumX = new System.Windows.Forms.NumericUpDown();
+            this.ColorPanel = new System.Windows.Forms.Panel();
+            this.UserText = new System.Windows.Forms.TextBox();
+            this.ColorCode = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.UDnumYoff)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UDnumXoff)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UDnumT)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UDnumSY)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UDnumSX)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UDnumRZ)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UDnumRY)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UDnumRX)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UDnumY)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UDnumX)).BeginInit();
             this.SuspendLayout();
             // 
-            // checkBox1
+            // checkT
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Checked = true;
-            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox1.Location = new System.Drawing.Point(12, 189);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(60, 16);
-            this.checkBox1.TabIndex = 7;
-            this.checkBox1.Text = "透明度";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkT.AutoSize = true;
+            this.checkT.Checked = true;
+            this.checkT.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkT.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.checkT.Location = new System.Drawing.Point(5, 180);
+            this.checkT.Margin = new System.Windows.Forms.Padding(0);
+            this.checkT.Name = "checkT";
+            this.checkT.Size = new System.Drawing.Size(75, 20);
+            this.checkT.TabIndex = 7;
+            this.checkT.Text = "透明度";
+            this.checkT.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // checkFlipH
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(12, 214);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(72, 16);
-            this.checkBox2.TabIndex = 10;
-            this.checkBox2.Text = "左右反転";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkFlipH.AutoSize = true;
+            this.checkFlipH.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.checkFlipH.Location = new System.Drawing.Point(5, 205);
+            this.checkFlipH.Margin = new System.Windows.Forms.Padding(0);
+            this.checkFlipH.Name = "checkFlipH";
+            this.checkFlipH.Size = new System.Drawing.Size(91, 20);
+            this.checkFlipH.TabIndex = 10;
+            this.checkFlipH.Text = "左右反転";
+            this.checkFlipH.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // checkFlipV
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(12, 239);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(72, 16);
-            this.checkBox3.TabIndex = 12;
-            this.checkBox3.Text = "上下反転";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkFlipV.AutoSize = true;
+            this.checkFlipV.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.checkFlipV.Location = new System.Drawing.Point(5, 230);
+            this.checkFlipV.Margin = new System.Windows.Forms.Padding(0);
+            this.checkFlipV.Name = "checkFlipV";
+            this.checkFlipV.Size = new System.Drawing.Size(91, 20);
+            this.checkFlipV.TabIndex = 12;
+            this.checkFlipV.Text = "上下反転";
+            this.checkFlipV.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // checkVisible
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Checked = true;
-            this.checkBox4.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox4.Location = new System.Drawing.Point(12, 264);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(48, 16);
-            this.checkBox4.TabIndex = 14;
-            this.checkBox4.Text = "表示";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkVisible.AutoSize = true;
+            this.checkVisible.Checked = true;
+            this.checkVisible.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkVisible.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.checkVisible.Location = new System.Drawing.Point(5, 255);
+            this.checkVisible.Margin = new System.Windows.Forms.Padding(0);
+            this.checkVisible.Name = "checkVisible";
+            this.checkVisible.Size = new System.Drawing.Size(59, 20);
+            this.checkVisible.TabIndex = 14;
+            this.checkVisible.Text = "表示";
+            this.checkVisible.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // checkColor
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(12, 289);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(51, 16);
-            this.checkBox5.TabIndex = 16;
-            this.checkBox5.Text = "カラー";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.checkColor.AutoSize = true;
+            this.checkColor.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.checkColor.Location = new System.Drawing.Point(5, 280);
+            this.checkColor.Margin = new System.Windows.Forms.Padding(0);
+            this.checkColor.Name = "checkColor";
+            this.checkColor.Size = new System.Drawing.Size(62, 20);
+            this.checkColor.TabIndex = 16;
+            this.checkColor.Text = "カラー";
+            this.checkColor.UseVisualStyleBackColor = true;
             // 
-            // checkBox7
+            // checkXoff
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(12, 314);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(98, 16);
-            this.checkBox7.TabIndex = 20;
-            this.checkBox7.Text = "原点Ｘオフセット";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.checkXoff.AutoSize = true;
+            this.checkXoff.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.checkXoff.Location = new System.Drawing.Point(6, 305);
+            this.checkXoff.Margin = new System.Windows.Forms.Padding(0);
+            this.checkXoff.Name = "checkXoff";
+            this.checkXoff.Size = new System.Drawing.Size(125, 20);
+            this.checkXoff.TabIndex = 20;
+            this.checkXoff.Text = "原点Ｘオフセット";
+            this.checkXoff.UseVisualStyleBackColor = true;
             // 
-            // checkBox8
+            // checkYoff
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(12, 339);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(98, 16);
-            this.checkBox8.TabIndex = 22;
-            this.checkBox8.Text = "原点Ｙオフセット";
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.checkYoff.AutoSize = true;
+            this.checkYoff.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.checkYoff.Location = new System.Drawing.Point(6, 330);
+            this.checkYoff.Margin = new System.Windows.Forms.Padding(0);
+            this.checkYoff.Name = "checkYoff";
+            this.checkYoff.Size = new System.Drawing.Size(125, 20);
+            this.checkYoff.TabIndex = 22;
+            this.checkYoff.Text = "原点Ｙオフセット";
+            this.checkYoff.UseVisualStyleBackColor = true;
             // 
-            // checkBox9
+            // checkUserText
             // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(12, 364);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(92, 16);
-            this.checkBox9.TabIndex = 24;
-            this.checkBox9.Text = "ユーザーデータ";
-            this.checkBox9.UseVisualStyleBackColor = true;
+            this.checkUserText.AutoSize = true;
+            this.checkUserText.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.checkUserText.Location = new System.Drawing.Point(6, 355);
+            this.checkUserText.Margin = new System.Windows.Forms.Padding(0);
+            this.checkUserText.Name = "checkUserText";
+            this.checkUserText.Size = new System.Drawing.Size(116, 20);
+            this.checkUserText.TabIndex = 24;
+            this.checkUserText.Text = "ユーザーデータ";
+            this.checkUserText.UseVisualStyleBackColor = true;
             // 
-            // checkBox10
+            // checkSY
             // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Checked = true;
-            this.checkBox10.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox10.Location = new System.Drawing.Point(12, 164);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(70, 16);
-            this.checkBox10.TabIndex = 25;
-            this.checkBox10.Text = "Ｙスケール";
-            this.checkBox10.UseVisualStyleBackColor = true;
+            this.checkSY.AutoSize = true;
+            this.checkSY.Checked = true;
+            this.checkSY.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkSY.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.checkSY.Location = new System.Drawing.Point(5, 155);
+            this.checkSY.Margin = new System.Windows.Forms.Padding(0);
+            this.checkSY.Name = "checkSY";
+            this.checkSY.Size = new System.Drawing.Size(88, 20);
+            this.checkSY.TabIndex = 25;
+            this.checkSY.Text = "Ｙスケール";
+            this.checkSY.UseVisualStyleBackColor = true;
             // 
-            // checkBox11
+            // checkSX
             // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Checked = true;
-            this.checkBox11.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox11.Location = new System.Drawing.Point(12, 139);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(70, 16);
-            this.checkBox11.TabIndex = 26;
-            this.checkBox11.Text = "Ｘスケール";
-            this.checkBox11.UseVisualStyleBackColor = true;
+            this.checkSX.AutoSize = true;
+            this.checkSX.Checked = true;
+            this.checkSX.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkSX.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.checkSX.Location = new System.Drawing.Point(5, 130);
+            this.checkSX.Margin = new System.Windows.Forms.Padding(0);
+            this.checkSX.Name = "checkSX";
+            this.checkSX.Size = new System.Drawing.Size(88, 20);
+            this.checkSX.TabIndex = 26;
+            this.checkSX.Text = "Ｘスケール";
+            this.checkSX.UseVisualStyleBackColor = true;
             // 
-            // checkBox12
+            // checkRZ
             // 
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.Location = new System.Drawing.Point(12, 114);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(68, 16);
-            this.checkBox12.TabIndex = 27;
-            this.checkBox12.Text = "Ｚ軸回転";
-            this.checkBox12.UseVisualStyleBackColor = true;
+            this.checkRZ.AutoSize = true;
+            this.checkRZ.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.checkRZ.Location = new System.Drawing.Point(5, 105);
+            this.checkRZ.Margin = new System.Windows.Forms.Padding(0);
+            this.checkRZ.Name = "checkRZ";
+            this.checkRZ.Size = new System.Drawing.Size(85, 20);
+            this.checkRZ.TabIndex = 27;
+            this.checkRZ.Text = "Ｚ軸回転";
+            this.checkRZ.UseVisualStyleBackColor = true;
             // 
-            // checkBox13
+            // checkRY
             // 
-            this.checkBox13.AutoSize = true;
-            this.checkBox13.Location = new System.Drawing.Point(12, 89);
-            this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(68, 16);
-            this.checkBox13.TabIndex = 28;
-            this.checkBox13.Text = "Ｙ軸回転";
-            this.checkBox13.UseVisualStyleBackColor = true;
+            this.checkRY.AutoSize = true;
+            this.checkRY.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.checkRY.Location = new System.Drawing.Point(5, 80);
+            this.checkRY.Margin = new System.Windows.Forms.Padding(0);
+            this.checkRY.Name = "checkRY";
+            this.checkRY.Size = new System.Drawing.Size(85, 20);
+            this.checkRY.TabIndex = 28;
+            this.checkRY.Text = "Ｙ軸回転";
+            this.checkRY.UseVisualStyleBackColor = true;
             // 
-            // checkBox14
+            // checkRX
             // 
-            this.checkBox14.AutoSize = true;
-            this.checkBox14.Location = new System.Drawing.Point(12, 64);
-            this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(68, 16);
-            this.checkBox14.TabIndex = 29;
-            this.checkBox14.Text = "Ｘ軸回転";
-            this.checkBox14.UseVisualStyleBackColor = true;
+            this.checkRX.AutoSize = true;
+            this.checkRX.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.checkRX.Location = new System.Drawing.Point(5, 55);
+            this.checkRX.Margin = new System.Windows.Forms.Padding(0);
+            this.checkRX.Name = "checkRX";
+            this.checkRX.Size = new System.Drawing.Size(85, 20);
+            this.checkRX.TabIndex = 29;
+            this.checkRX.Text = "Ｘ軸回転";
+            this.checkRX.UseVisualStyleBackColor = true;
             // 
-            // checkBox15
+            // checkY
             // 
-            this.checkBox15.AutoSize = true;
-            this.checkBox15.Location = new System.Drawing.Point(12, 39);
-            this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(56, 16);
-            this.checkBox15.TabIndex = 30;
-            this.checkBox15.Text = "Ｙ座標";
-            this.checkBox15.UseVisualStyleBackColor = true;
+            this.checkY.AutoSize = true;
+            this.checkY.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.checkY.Location = new System.Drawing.Point(5, 30);
+            this.checkY.Margin = new System.Windows.Forms.Padding(0);
+            this.checkY.Name = "checkY";
+            this.checkY.Size = new System.Drawing.Size(69, 20);
+            this.checkY.TabIndex = 30;
+            this.checkY.Text = "Ｙ座標";
+            this.checkY.UseVisualStyleBackColor = true;
             // 
-            // checkBox16
+            // checkX
             // 
-            this.checkBox16.AutoSize = true;
-            this.checkBox16.Location = new System.Drawing.Point(12, 14);
-            this.checkBox16.Name = "checkBox16";
-            this.checkBox16.Size = new System.Drawing.Size(56, 16);
-            this.checkBox16.TabIndex = 31;
-            this.checkBox16.Text = "Ｘ座標";
-            this.checkBox16.UseVisualStyleBackColor = true;
+            this.checkX.AutoSize = true;
+            this.checkX.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.checkX.Location = new System.Drawing.Point(5, 5);
+            this.checkX.Margin = new System.Windows.Forms.Padding(0);
+            this.checkX.Name = "checkX";
+            this.checkX.Size = new System.Drawing.Size(69, 20);
+            this.checkX.TabIndex = 31;
+            this.checkX.Text = "Ｘ座標";
+            this.checkX.UseVisualStyleBackColor = true;
             // 
-            // numericUpDown2
+            // UDnumYoff
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(116, 338);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
+            this.UDnumYoff.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.UDnumYoff.Location = new System.Drawing.Point(150, 329);
+            this.UDnumYoff.Margin = new System.Windows.Forms.Padding(0);
+            this.UDnumYoff.Maximum = new decimal(new int[] {
             2147483647,
             0,
             0,
             0});
-            this.numericUpDown2.Minimum = new decimal(new int[] {
+            this.UDnumYoff.Minimum = new decimal(new int[] {
             -2147483648,
             0,
             0,
             -2147483648});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(120, 19);
-            this.numericUpDown2.TabIndex = 33;
-            this.numericUpDown2.Value = new decimal(new int[] {
+            this.UDnumYoff.Name = "UDnumYoff";
+            this.UDnumYoff.Size = new System.Drawing.Size(70, 23);
+            this.UDnumYoff.TabIndex = 33;
+            this.UDnumYoff.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.UDnumYoff.Value = new decimal(new int[] {
             1,
             0,
             0,
             65536});
             // 
-            // numericUpDown3
+            // UDnumXoff
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(116, 313);
-            this.numericUpDown3.Maximum = new decimal(new int[] {
+            this.UDnumXoff.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.UDnumXoff.Location = new System.Drawing.Point(150, 304);
+            this.UDnumXoff.Margin = new System.Windows.Forms.Padding(0);
+            this.UDnumXoff.Maximum = new decimal(new int[] {
             2147483647,
             0,
             0,
             0});
-            this.numericUpDown3.Minimum = new decimal(new int[] {
+            this.UDnumXoff.Minimum = new decimal(new int[] {
             -2147483648,
             0,
             0,
             -2147483648});
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(120, 19);
-            this.numericUpDown3.TabIndex = 34;
-            this.numericUpDown3.Value = new decimal(new int[] {
+            this.UDnumXoff.Name = "UDnumXoff";
+            this.UDnumXoff.Size = new System.Drawing.Size(70, 23);
+            this.UDnumXoff.TabIndex = 34;
+            this.UDnumXoff.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.UDnumXoff.Value = new decimal(new int[] {
             1,
             0,
             0,
             65536});
             // 
-            // numericUpDown6
+            // UDnumT
             // 
-            this.numericUpDown6.Location = new System.Drawing.Point(116, 188);
-            this.numericUpDown6.Maximum = new decimal(new int[] {
+            this.UDnumT.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.UDnumT.Location = new System.Drawing.Point(150, 179);
+            this.UDnumT.Margin = new System.Windows.Forms.Padding(0);
+            this.UDnumT.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDown6.Name = "numericUpDown6";
-            this.numericUpDown6.Size = new System.Drawing.Size(120, 19);
-            this.numericUpDown6.TabIndex = 37;
-            this.numericUpDown6.Value = new decimal(new int[] {
+            this.UDnumT.Name = "UDnumT";
+            this.UDnumT.Size = new System.Drawing.Size(70, 23);
+            this.UDnumT.TabIndex = 37;
+            this.UDnumT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.UDnumT.Value = new decimal(new int[] {
             255,
             0,
             0,
             0});
             // 
-            // numericUpDown7
+            // UDnumSY
             // 
-            this.numericUpDown7.DecimalPlaces = 3;
-            this.numericUpDown7.Increment = new decimal(new int[] {
+            this.UDnumSY.DecimalPlaces = 3;
+            this.UDnumSY.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.UDnumSY.Increment = new decimal(new int[] {
             1,
             0,
             0,
             131072});
-            this.numericUpDown7.Location = new System.Drawing.Point(116, 163);
-            this.numericUpDown7.Maximum = new decimal(new int[] {
+            this.UDnumSY.Location = new System.Drawing.Point(150, 154);
+            this.UDnumSY.Margin = new System.Windows.Forms.Padding(0);
+            this.UDnumSY.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDown7.Name = "numericUpDown7";
-            this.numericUpDown7.Size = new System.Drawing.Size(120, 19);
-            this.numericUpDown7.TabIndex = 38;
-            this.numericUpDown7.Value = new decimal(new int[] {
+            this.UDnumSY.Name = "UDnumSY";
+            this.UDnumSY.Size = new System.Drawing.Size(70, 23);
+            this.UDnumSY.TabIndex = 38;
+            this.UDnumSY.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.UDnumSY.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
             // 
-            // numericUpDown8
+            // UDnumSX
             // 
-            this.numericUpDown8.DecimalPlaces = 3;
-            this.numericUpDown8.Increment = new decimal(new int[] {
+            this.UDnumSX.DecimalPlaces = 3;
+            this.UDnumSX.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.UDnumSX.Increment = new decimal(new int[] {
             1,
             0,
             0,
             131072});
-            this.numericUpDown8.Location = new System.Drawing.Point(116, 138);
-            this.numericUpDown8.Maximum = new decimal(new int[] {
+            this.UDnumSX.Location = new System.Drawing.Point(150, 129);
+            this.UDnumSX.Margin = new System.Windows.Forms.Padding(0);
+            this.UDnumSX.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDown8.Name = "numericUpDown8";
-            this.numericUpDown8.Size = new System.Drawing.Size(120, 19);
-            this.numericUpDown8.TabIndex = 39;
-            this.numericUpDown8.Value = new decimal(new int[] {
+            this.UDnumSX.Name = "UDnumSX";
+            this.UDnumSX.Size = new System.Drawing.Size(70, 23);
+            this.UDnumSX.TabIndex = 39;
+            this.UDnumSX.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.UDnumSX.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
             // 
-            // numericUpDown9
+            // UDnumRZ
             // 
-            this.numericUpDown9.DecimalPlaces = 3;
-            this.numericUpDown9.Increment = new decimal(new int[] {
+            this.UDnumRZ.DecimalPlaces = 3;
+            this.UDnumRZ.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.UDnumRZ.Increment = new decimal(new int[] {
             1019924768,
             57145,
             0,
             1048576});
-            this.numericUpDown9.Location = new System.Drawing.Point(116, 113);
-            this.numericUpDown9.Maximum = new decimal(new int[] {
+            this.UDnumRZ.Location = new System.Drawing.Point(150, 104);
+            this.UDnumRZ.Margin = new System.Windows.Forms.Padding(0);
+            this.UDnumRZ.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDown9.Minimum = new decimal(new int[] {
+            this.UDnumRZ.Minimum = new decimal(new int[] {
             255,
             0,
             0,
             -2147483648});
-            this.numericUpDown9.Name = "numericUpDown9";
-            this.numericUpDown9.Size = new System.Drawing.Size(120, 19);
-            this.numericUpDown9.TabIndex = 40;
+            this.UDnumRZ.Name = "UDnumRZ";
+            this.UDnumRZ.Size = new System.Drawing.Size(70, 23);
+            this.UDnumRZ.TabIndex = 40;
+            this.UDnumRZ.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // numericUpDown10
+            // UDnumRY
             // 
-            this.numericUpDown10.DecimalPlaces = 3;
-            this.numericUpDown10.Increment = new decimal(new int[] {
+            this.UDnumRY.DecimalPlaces = 3;
+            this.UDnumRY.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.UDnumRY.Increment = new decimal(new int[] {
             1019924768,
             57145,
             0,
             1048576});
-            this.numericUpDown10.Location = new System.Drawing.Point(116, 88);
-            this.numericUpDown10.Maximum = new decimal(new int[] {
+            this.UDnumRY.Location = new System.Drawing.Point(150, 79);
+            this.UDnumRY.Margin = new System.Windows.Forms.Padding(0);
+            this.UDnumRY.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDown10.Minimum = new decimal(new int[] {
+            this.UDnumRY.Minimum = new decimal(new int[] {
             255,
             0,
             0,
             -2147483648});
-            this.numericUpDown10.Name = "numericUpDown10";
-            this.numericUpDown10.Size = new System.Drawing.Size(120, 19);
-            this.numericUpDown10.TabIndex = 41;
+            this.UDnumRY.Name = "UDnumRY";
+            this.UDnumRY.Size = new System.Drawing.Size(70, 23);
+            this.UDnumRY.TabIndex = 41;
+            this.UDnumRY.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // numericUpDown11
+            // UDnumRX
             // 
-            this.numericUpDown11.DecimalPlaces = 3;
-            this.numericUpDown11.Increment = new decimal(new int[] {
+            this.UDnumRX.DecimalPlaces = 3;
+            this.UDnumRX.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.UDnumRX.Increment = new decimal(new int[] {
             1019924768,
             57145,
             0,
             1048576});
-            this.numericUpDown11.Location = new System.Drawing.Point(116, 63);
-            this.numericUpDown11.Maximum = new decimal(new int[] {
+            this.UDnumRX.Location = new System.Drawing.Point(150, 54);
+            this.UDnumRX.Margin = new System.Windows.Forms.Padding(0);
+            this.UDnumRX.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDown11.Minimum = new decimal(new int[] {
+            this.UDnumRX.Minimum = new decimal(new int[] {
             255,
             0,
             0,
             -2147483648});
-            this.numericUpDown11.Name = "numericUpDown11";
-            this.numericUpDown11.Size = new System.Drawing.Size(120, 19);
-            this.numericUpDown11.TabIndex = 42;
+            this.UDnumRX.Name = "UDnumRX";
+            this.UDnumRX.Size = new System.Drawing.Size(70, 23);
+            this.UDnumRX.TabIndex = 42;
+            this.UDnumRX.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // numericUpDown12
+            // UDnumY
             // 
-            this.numericUpDown12.Location = new System.Drawing.Point(116, 38);
-            this.numericUpDown12.Maximum = new decimal(new int[] {
+            this.UDnumY.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.UDnumY.Location = new System.Drawing.Point(150, 29);
+            this.UDnumY.Margin = new System.Windows.Forms.Padding(0);
+            this.UDnumY.Maximum = new decimal(new int[] {
             2147483647,
             0,
             0,
             0});
-            this.numericUpDown12.Minimum = new decimal(new int[] {
+            this.UDnumY.Minimum = new decimal(new int[] {
             -2147483648,
             0,
             0,
             -2147483648});
-            this.numericUpDown12.Name = "numericUpDown12";
-            this.numericUpDown12.Size = new System.Drawing.Size(120, 19);
-            this.numericUpDown12.TabIndex = 43;
+            this.UDnumY.Name = "UDnumY";
+            this.UDnumY.Size = new System.Drawing.Size(70, 23);
+            this.UDnumY.TabIndex = 43;
+            this.UDnumY.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // numericUpDown13
+            // UDnumX
             // 
-            this.numericUpDown13.Location = new System.Drawing.Point(116, 13);
-            this.numericUpDown13.Maximum = new decimal(new int[] {
+            this.UDnumX.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.UDnumX.Location = new System.Drawing.Point(150, 4);
+            this.UDnumX.Margin = new System.Windows.Forms.Padding(0);
+            this.UDnumX.Maximum = new decimal(new int[] {
             2147483647,
             0,
             0,
             0});
-            this.numericUpDown13.Minimum = new decimal(new int[] {
+            this.UDnumX.Minimum = new decimal(new int[] {
             -2147483648,
             0,
             0,
             -2147483648});
-            this.numericUpDown13.Name = "numericUpDown13";
-            this.numericUpDown13.Size = new System.Drawing.Size(120, 19);
-            this.numericUpDown13.TabIndex = 44;
+            this.UDnumX.Name = "UDnumX";
+            this.UDnumX.Size = new System.Drawing.Size(70, 23);
+            this.UDnumX.TabIndex = 44;
+            this.UDnumX.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // panel1
+            // ColorPanel
             // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Location = new System.Drawing.Point(116, 288);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(120, 19);
-            this.panel1.TabIndex = 45;
+            this.ColorPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ColorPanel.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.ColorPanel.Location = new System.Drawing.Point(121, 279);
+            this.ColorPanel.Margin = new System.Windows.Forms.Padding(0);
+            this.ColorPanel.Name = "ColorPanel";
+            this.ColorPanel.Size = new System.Drawing.Size(29, 23);
+            this.ColorPanel.TabIndex = 45;
+            this.ColorPanel.Click += new System.EventHandler(this.ColorPanel_Click);
             // 
-            // textBox2
+            // UserText
             // 
-            this.textBox2.Location = new System.Drawing.Point(116, 362);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(120, 19);
-            this.textBox2.TabIndex = 47;
+            this.UserText.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.UserText.Location = new System.Drawing.Point(150, 355);
+            this.UserText.Margin = new System.Windows.Forms.Padding(0);
+            this.UserText.Name = "UserText";
+            this.UserText.Size = new System.Drawing.Size(70, 23);
+            this.UserText.TabIndex = 47;
+            // 
+            // ColorCode
+            // 
+            this.ColorCode.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.ColorCode.Location = new System.Drawing.Point(150, 279);
+            this.ColorCode.Margin = new System.Windows.Forms.Padding(0);
+            this.ColorCode.Name = "ColorCode";
+            this.ColorCode.Size = new System.Drawing.Size(70, 23);
+            this.ColorCode.TabIndex = 48;
+            this.ColorCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ColorCode.TextChanged += new System.EventHandler(this.ColorCode_TextChanged);
             // 
             // FormAttribute
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(248, 392);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.numericUpDown13);
-            this.Controls.Add(this.numericUpDown12);
-            this.Controls.Add(this.numericUpDown11);
-            this.Controls.Add(this.numericUpDown10);
-            this.Controls.Add(this.numericUpDown9);
-            this.Controls.Add(this.numericUpDown8);
-            this.Controls.Add(this.numericUpDown7);
-            this.Controls.Add(this.numericUpDown6);
-            this.Controls.Add(this.numericUpDown3);
-            this.Controls.Add(this.numericUpDown2);
-            this.Controls.Add(this.checkBox16);
-            this.Controls.Add(this.checkBox15);
-            this.Controls.Add(this.checkBox14);
-            this.Controls.Add(this.checkBox13);
-            this.Controls.Add(this.checkBox12);
-            this.Controls.Add(this.checkBox11);
-            this.Controls.Add(this.checkBox10);
-            this.Controls.Add(this.checkBox9);
-            this.Controls.Add(this.checkBox8);
-            this.Controls.Add(this.checkBox7);
-            this.Controls.Add(this.checkBox5);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.ClientSize = new System.Drawing.Size(226, 384);
+            this.Controls.Add(this.ColorCode);
+            this.Controls.Add(this.UserText);
+            this.Controls.Add(this.ColorPanel);
+            this.Controls.Add(this.UDnumX);
+            this.Controls.Add(this.UDnumY);
+            this.Controls.Add(this.UDnumRX);
+            this.Controls.Add(this.UDnumRY);
+            this.Controls.Add(this.UDnumRZ);
+            this.Controls.Add(this.UDnumSX);
+            this.Controls.Add(this.UDnumSY);
+            this.Controls.Add(this.UDnumT);
+            this.Controls.Add(this.UDnumXoff);
+            this.Controls.Add(this.UDnumYoff);
+            this.Controls.Add(this.checkX);
+            this.Controls.Add(this.checkY);
+            this.Controls.Add(this.checkRX);
+            this.Controls.Add(this.checkRY);
+            this.Controls.Add(this.checkRZ);
+            this.Controls.Add(this.checkSX);
+            this.Controls.Add(this.checkSY);
+            this.Controls.Add(this.checkUserText);
+            this.Controls.Add(this.checkYoff);
+            this.Controls.Add(this.checkXoff);
+            this.Controls.Add(this.checkColor);
+            this.Controls.Add(this.checkVisible);
+            this.Controls.Add(this.checkFlipV);
+            this.Controls.Add(this.checkFlipH);
+            this.Controls.Add(this.checkT);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "FormAttribute";
             this.Text = "アトリビュート";
-            this.TopMost = true;
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UDnumYoff)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UDnumXoff)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UDnumT)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UDnumSY)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UDnumSX)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UDnumRZ)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UDnumRY)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UDnumRX)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UDnumY)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UDnumX)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -503,32 +580,33 @@
 
         #endregion
 
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox9;
-        private System.Windows.Forms.CheckBox checkBox10;
-        private System.Windows.Forms.CheckBox checkBox11;
-        private System.Windows.Forms.CheckBox checkBox12;
-        private System.Windows.Forms.CheckBox checkBox13;
-        private System.Windows.Forms.CheckBox checkBox14;
-        private System.Windows.Forms.CheckBox checkBox15;
-        private System.Windows.Forms.CheckBox checkBox16;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
-        private System.Windows.Forms.NumericUpDown numericUpDown6;
-        private System.Windows.Forms.NumericUpDown numericUpDown7;
-        private System.Windows.Forms.NumericUpDown numericUpDown8;
-        private System.Windows.Forms.NumericUpDown numericUpDown9;
-        private System.Windows.Forms.NumericUpDown numericUpDown10;
-        private System.Windows.Forms.NumericUpDown numericUpDown11;
-        private System.Windows.Forms.NumericUpDown numericUpDown12;
-        private System.Windows.Forms.NumericUpDown numericUpDown13;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.CheckBox checkT;
+        private System.Windows.Forms.CheckBox checkFlipH;
+        private System.Windows.Forms.CheckBox checkFlipV;
+        private System.Windows.Forms.CheckBox checkVisible;
+        private System.Windows.Forms.CheckBox checkColor;
+        private System.Windows.Forms.CheckBox checkXoff;
+        private System.Windows.Forms.CheckBox checkYoff;
+        private System.Windows.Forms.CheckBox checkUserText;
+        private System.Windows.Forms.CheckBox checkSY;
+        private System.Windows.Forms.CheckBox checkSX;
+        private System.Windows.Forms.CheckBox checkRZ;
+        private System.Windows.Forms.CheckBox checkRY;
+        private System.Windows.Forms.CheckBox checkRX;
+        private System.Windows.Forms.CheckBox checkY;
+        private System.Windows.Forms.CheckBox checkX;
+        private System.Windows.Forms.NumericUpDown UDnumYoff;
+        private System.Windows.Forms.NumericUpDown UDnumXoff;
+        private System.Windows.Forms.NumericUpDown UDnumT;
+        private System.Windows.Forms.NumericUpDown UDnumSY;
+        private System.Windows.Forms.NumericUpDown UDnumSX;
+        private System.Windows.Forms.NumericUpDown UDnumRZ;
+        private System.Windows.Forms.NumericUpDown UDnumRY;
+        private System.Windows.Forms.NumericUpDown UDnumRX;
+        private System.Windows.Forms.NumericUpDown UDnumY;
+        private System.Windows.Forms.NumericUpDown UDnumX;
+        private System.Windows.Forms.Panel ColorPanel;
+        private System.Windows.Forms.TextBox UserText;
+        private System.Windows.Forms.TextBox ColorCode;
     }
 }

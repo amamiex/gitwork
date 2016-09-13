@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AtributeBase.cs" />
     <Compile Include="ClsImage.cs" />
     <Compile Include="ClsPath.cs" />
     <Compile Include="ClsTool.cs" />

@@ -148,10 +148,10 @@
             this.ClientSize = new System.Drawing.Size(680, 503);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.menuStrip);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.MainMenuStrip = this.menuStrip;
             this.Name = "FormMain";
             this.Text = "PrjHikariwoAnim";
-            this.TopMost = true;
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
