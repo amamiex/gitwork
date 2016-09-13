@@ -29,11 +29,27 @@ namespace PrjHikariwoAnim
             UDnumSY.Value = (decimal)atr.SY;
             //UDnumSZ.Value = (decimal)atr.SZ;
 
+            checkX.Checked = atr.isX;
+            checkY.Checked = atr.isY;
+            //checkZ.Checked = atr.isZ;
+
+            checkRX.Checked = atr.isRX;
+            checkRY.Checked = atr.isRY;
+            checkRZ.Checked = atr.isRZ;
+
+            checkSX.Checked = atr.isSX;
+            checkSY.Checked = atr.isSY;
+            //checkSZ.Checked = atr.isSZ;
+
             checkFlipH.Checked = atr.FlipH;
             checkFlipV.Checked = atr.FlipV;
 
+
+
             //checkEnable.Checked = atr.Enable;
             checkVisible.Checked = atr.Visible;
+
+            UDnumT.Value = atr.Transparency;
 
             ColorCode.Text = $"{atr.Color:X8}";
 
@@ -63,6 +79,8 @@ namespace PrjHikariwoAnim
 
             //ret.Enable = checkEnable.Checked;
             ret.Visible = checkVisible.Checked;
+
+            ret.Transparency = (int)UDnumT.Value;
 
             if (ColorCode.Text != "")
             {
