@@ -11,6 +11,9 @@ namespace PrjHikariwoAnim
 {
     public partial class FormAttribute : Form
     {
+        //一時記録用
+        //AllSet,AllGet時に更新
+        private AttributeBase ValuesPool;
         public FormAttribute()
         {
             InitializeComponent();
@@ -18,6 +21,8 @@ namespace PrjHikariwoAnim
 
         public void SetAllParam(AttributeBase atr)
         {
+            ValuesPool = atr;
+
             UDnumX.Value = atr.X;
             UDnumY.Value = atr.Y;
             //UDnumZ.Value = atr.Z;
@@ -92,6 +97,7 @@ namespace PrjHikariwoAnim
 
             ret.Text = UserText.Text;
 
+            ValuesPool = ret;
             return ret;
         }
 

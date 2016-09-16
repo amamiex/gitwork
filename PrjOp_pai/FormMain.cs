@@ -36,7 +36,7 @@ namespace PrjHikariwoAnim
             this.mFormAttribute.Show();
         }
 
-        private void ToolStripMenuItem_ImageList_Click(object sender, EventArgs e)
+        private void TSMenu_ImageList_Click(object sender, EventArgs e)
         {
             if (this.mFormImageList == null)
             {
@@ -44,14 +44,14 @@ namespace PrjHikariwoAnim
                 this.mFormImageList.Show();
             }
             else
-            {
+            {                                
                 this.mFormImageList.Close();
                 this.mFormImageList.Dispose();
                 this.mFormImageList = null;
             }
         }
 
-        private void ToolStripMenuItem_Control_Click(object sender, EventArgs e)
+        private void TSMenu_Control_Click(object sender, EventArgs e)
         {
             if (this.mFormControl == null)
             {
@@ -66,7 +66,7 @@ namespace PrjHikariwoAnim
             }
         }
 
-        private void ToolStripMenuItem_Attribute_Click(object sender, EventArgs e)
+        private void TSMenu_Attribute_Click(object sender, EventArgs e)
         {
             if (this.mFormAttribute == null)
             {
@@ -110,11 +110,17 @@ namespace PrjHikariwoAnim
                 }
             }
 
-            this.ToolStripMenuItem_ImageList.Checked = (this.mFormImageList != null);
+            this.TSMenu_ImageList.Checked = (this.mFormImageList != null);
 
-            this.ToolStripMenuItem_Control.Checked = (this.mFormControl != null);
+            this.TSMenu_Control.Checked = (this.mFormControl != null);
 
-            this.ToolStripMenuItem_Attribute.Checked = (this.mFormAttribute != null);
+            this.TSMenu_Attribute.Checked = (this.mFormAttribute != null);
+        }
+
+        private void FormMain_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Properties.Settings.Default["FormMainLocate"] = this.Location;
+            Properties.Settings.Default.Save();
         }
     }
 }

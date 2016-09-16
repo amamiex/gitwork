@@ -36,9 +36,9 @@
             this.プロジェクトを上書き保存SToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.名前を付けて保存AToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ウィンドウWToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuItem_ImageList = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuItem_Control = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuItem_Attribute = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMenu_ImageList = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMenu_Control = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMenu_Attribute = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.timerMain = new System.Windows.Forms.Timer(this.components);
             this.menuStrip.SuspendLayout();
@@ -51,7 +51,7 @@
             this.ウィンドウWToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(680, 24);
+            this.menuStrip.Size = new System.Drawing.Size(401, 24);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "menuStrip1";
             // 
@@ -93,45 +93,45 @@
             // ウィンドウWToolStripMenuItem
             // 
             this.ウィンドウWToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ToolStripMenuItem_ImageList,
-            this.ToolStripMenuItem_Control,
-            this.ToolStripMenuItem_Attribute});
+            this.TSMenu_ImageList,
+            this.TSMenu_Control,
+            this.TSMenu_Attribute});
             this.ウィンドウWToolStripMenuItem.Name = "ウィンドウWToolStripMenuItem";
             this.ウィンドウWToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
             this.ウィンドウWToolStripMenuItem.Text = "ウィンドウ(&W)";
             // 
-            // ToolStripMenuItem_ImageList
+            // TSMenu_ImageList
             // 
-            this.ToolStripMenuItem_ImageList.Checked = true;
-            this.ToolStripMenuItem_ImageList.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ToolStripMenuItem_ImageList.Name = "ToolStripMenuItem_ImageList";
-            this.ToolStripMenuItem_ImageList.Size = new System.Drawing.Size(146, 22);
-            this.ToolStripMenuItem_ImageList.Text = "イメージリスト(&I)";
-            this.ToolStripMenuItem_ImageList.Click += new System.EventHandler(this.ToolStripMenuItem_ImageList_Click);
+            this.TSMenu_ImageList.Checked = true;
+            this.TSMenu_ImageList.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.TSMenu_ImageList.Name = "TSMenu_ImageList";
+            this.TSMenu_ImageList.Size = new System.Drawing.Size(146, 22);
+            this.TSMenu_ImageList.Text = "イメージリスト(&I)";
+            this.TSMenu_ImageList.Click += new System.EventHandler(this.TSMenu_ImageList_Click);
             // 
-            // ToolStripMenuItem_Control
+            // TSMenu_Control
             // 
-            this.ToolStripMenuItem_Control.Checked = true;
-            this.ToolStripMenuItem_Control.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ToolStripMenuItem_Control.Name = "ToolStripMenuItem_Control";
-            this.ToolStripMenuItem_Control.Size = new System.Drawing.Size(146, 22);
-            this.ToolStripMenuItem_Control.Text = "コントロール(&C)";
-            this.ToolStripMenuItem_Control.Click += new System.EventHandler(this.ToolStripMenuItem_Control_Click);
+            this.TSMenu_Control.Checked = true;
+            this.TSMenu_Control.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.TSMenu_Control.Name = "TSMenu_Control";
+            this.TSMenu_Control.Size = new System.Drawing.Size(146, 22);
+            this.TSMenu_Control.Text = "コントロール(&C)";
+            this.TSMenu_Control.Click += new System.EventHandler(this.TSMenu_Control_Click);
             // 
-            // ToolStripMenuItem_Attribute
+            // TSMenu_Attribute
             // 
-            this.ToolStripMenuItem_Attribute.Checked = true;
-            this.ToolStripMenuItem_Attribute.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ToolStripMenuItem_Attribute.Name = "ToolStripMenuItem_Attribute";
-            this.ToolStripMenuItem_Attribute.Size = new System.Drawing.Size(146, 22);
-            this.ToolStripMenuItem_Attribute.Text = "アトリビュート(&A)";
-            this.ToolStripMenuItem_Attribute.Click += new System.EventHandler(this.ToolStripMenuItem_Attribute_Click);
+            this.TSMenu_Attribute.Checked = true;
+            this.TSMenu_Attribute.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.TSMenu_Attribute.Name = "TSMenu_Attribute";
+            this.TSMenu_Attribute.Size = new System.Drawing.Size(146, 22);
+            this.TSMenu_Attribute.Text = "アトリビュート(&A)";
+            this.TSMenu_Attribute.Click += new System.EventHandler(this.TSMenu_Attribute_Click);
             // 
             // statusStrip
             // 
-            this.statusStrip.Location = new System.Drawing.Point(0, 481);
+            this.statusStrip.Location = new System.Drawing.Point(0, 202);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(680, 22);
+            this.statusStrip.Size = new System.Drawing.Size(401, 22);
             this.statusStrip.TabIndex = 1;
             this.statusStrip.Text = "statusStrip1";
             // 
@@ -145,13 +145,14 @@
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(680, 503);
+            this.ClientSize = new System.Drawing.Size(401, 224);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.menuStrip);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.MainMenuStrip = this.menuStrip;
             this.Name = "FormMain";
             this.Text = "PrjHikariwoAnim";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormMain_FormClosed);
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
@@ -170,10 +171,10 @@
         private System.Windows.Forms.ToolStripMenuItem 名前を付けて保存AToolStripMenuItem;
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.ToolStripMenuItem ウィンドウWToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_ImageList;
-        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_Control;
+        private System.Windows.Forms.ToolStripMenuItem TSMenu_ImageList;
+        private System.Windows.Forms.ToolStripMenuItem TSMenu_Control;
         private System.Windows.Forms.Timer timerMain;
-        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_Attribute;
+        private System.Windows.Forms.ToolStripMenuItem TSMenu_Attribute;
     }
 }
 

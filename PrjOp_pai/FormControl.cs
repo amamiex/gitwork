@@ -16,6 +16,7 @@ namespace PrjHikariwoAnim
         private static readonly int HEAD_HEIGHT = 20;
         private static readonly int LINE_HEIGHT = 40;
         private static readonly int TIME_CELL_WIDTH = 15;
+
         public ArrayList mListLine = null;  //値はClsLine
         public Font mFont = null;
 
@@ -79,7 +80,7 @@ namespace PrjHikariwoAnim
                     this.mListLine.Add(clLine);
                 }
 
-                int inWidth = (int)this.numericUpDown_Frame.Value * FormControl.TIME_CELL_WIDTH + 1;
+                int inWidth = (int)this.InFrame.Value * FormControl.TIME_CELL_WIDTH + 1;
                 int inHeight = FormControl.HEAD_HEIGHT + this.mListLine.Count * FormControl.LINE_HEIGHT + 1;
                 this.panel_Control.Width = 512;
                 this.panel_Control.Height = inHeight;
@@ -110,6 +111,7 @@ namespace PrjHikariwoAnim
 
         private void panel_Control_MouseClick(object sender, MouseEventArgs e)
         {
+            //Item選択
 
         }
 
@@ -130,7 +132,14 @@ namespace PrjHikariwoAnim
 
         private void panel_Time_MouseClick(object sender, MouseEventArgs e)
         {
-
+            //Flameクリック処理
+            //フレーム検出
+            int cx = e.X / TIME_CELL_WIDTH;
+            int cy = e.Y / HEAD_HEIGHT;
+            //注:範囲指定時は考慮
+            //クリックフレームを現在のフレームに指定
+            if (cx <= InFrame.Value) NowFlame.Value = cx;
+            
         }
 
         private void panel_Time_MouseEnter(object sender, EventArgs e)
@@ -150,7 +159,7 @@ namespace PrjHikariwoAnim
 
         private void numericUpDown_Frame_ValueChanged(object sender, EventArgs e)
         {
-            int inWidth = (int)this.numericUpDown_Frame.Value * FormControl.TIME_CELL_WIDTH + 1;
+            int inWidth = (int)this.InFrame.Value * FormControl.TIME_CELL_WIDTH + 1;
             this.panel_Time.Width = inWidth;
 
             this.panel_Time.Refresh();
@@ -158,18 +167,36 @@ namespace PrjHikariwoAnim
 
         private void panel_Control_Paint(object sender, PaintEventArgs e)
         {
-            int inWidth = this.panel_Control.Width;
+            int inWidth  = this.panel_Control.Width;
             int inHeight = this.panel_Control.Height;
+            int GridSize = 8 * PreviewZoomLelel.Value;
+
 
             //以下、イメージリスト描画処理
             e.Graphics.Clear(Color.White);
 
+            //DrawGrid
+            if (CheckGrid.Checked)
+            {
+                //Grid
+                //V
+                for (int gy = (inHeight/2) % GridSize ; gy < inHeight; gy += GridSize)
+                {
+                    e.Graphics.DrawLine(Pens.LightGreen,0,gy,inWidth,gy);
+                }
+                //H
+                for (int gx =(inWidth/2) % GridSize ; gx < inWidth; gx += GridSize)
+                {
+                    e.Graphics.DrawLine(Pens.LightGreen, gx, 0, gx,inHeight);
+                }                
+            }
+
             //以下、縦ライン描画処理
-            e.Graphics.DrawLine(Pens.Black, 40, 0, 40, inHeight);
+            //e.Graphics.DrawLine(Pens.Black, 40, 0, 40, inHeight);
 
             //以下、横ライン描画処理
             int inY = FormControl.HEAD_HEIGHT;
-            e.Graphics.DrawLine(Pens.Black, 0, inY, inWidth, inY);
+            //e.Graphics.DrawLine(Pens.Black, 0, inY, inWidth, inY);
 
             int inCnt, inMax = this.mListLine.Count;
             for (inCnt = 0; inCnt < inMax; inCnt++)
@@ -197,27 +224,45 @@ namespace PrjHikariwoAnim
             }
 
 //          e.Graphics.FillRectangle(Brushes.Lime, new Rectangle(0, 0, 500, 500));
+            
+            //DrawCrossBar
+            if(CheckCross.Checked)
+            {
+                e.Graphics.DrawLine(Pens.Red, inWidth/2, 0, inWidth/2, inHeight);
+                e.Graphics.DrawLine(Pens.Red, 0,inHeight/2 , inWidth,inHeight/2);
+            }
+
         }
 
         private void panel_Time_Paint(object sender, PaintEventArgs e)
         {
+            //TimeLine
             int inWidth = this.panel_Time.Width;
             int inHeight = this.panel_Control.Height;
-            int inFrame = (int)this.numericUpDown_Frame.Value;
+            int inFrame = (int)this.InFrame.Value;
+            int CellWidth = TIME_CELL_WIDTH;
+            int CellHeight = HEAD_HEIGHT;
 
-            //以下、タイムライン描画処理
+            //全消去
             e.Graphics.Clear(Color.White);
 
             //以下、縦ライン描画処理
             int inCnt, inMax;
             for (inCnt = 0; inCnt < inFrame; inCnt++)
             {
-                e.Graphics.DrawLine(Pens.Black, (inCnt + 1) * FormControl.TIME_CELL_WIDTH, 0, (inCnt + 1) * FormControl.TIME_CELL_WIDTH, inHeight);
+                var pen = Pens.Black;
+                
+                //5の倍数の時(グレイ)
+                if (inCnt % 5 == 0) pen = Pens.LightGray;
+                //現在のフレームの時(赤)
+                if (inCnt == NowFlame.Value) pen = Pens.Red;
+                //標準(黒)
+                e.Graphics.DrawLine(pen, (inCnt + 1) * CellWidth, 0, (inCnt + 1) * CellWidth, inHeight);
             }
 
             //以下、横ライン描画処理
-            int inY = FormControl.HEAD_HEIGHT;
-            e.Graphics.DrawLine(Pens.Black, 0, inY, inWidth, inY);
+
+            e.Graphics.DrawLine(Pens.Black, 0, CellHeight, inWidth -1 , CellHeight);
 
             inMax = this.mListLine.Count;
             for (inCnt = 0; inCnt < inMax; inCnt++)
@@ -226,9 +271,33 @@ namespace PrjHikariwoAnim
                 if (clLine == null) continue;
 
                 //以下、境界ライン描画処理
-                inY = FormControl.HEAD_HEIGHT + (inCnt + 1) * FormControl.LINE_HEIGHT;
+                int inY = CellHeight + (inCnt + 1) * CellHeight;
                 e.Graphics.DrawLine(Pens.Black, 0, inY, inWidth, inY);
             }
+
+
+        }
+
+        private void NowFlame_ValueChanged(object sender, EventArgs e)
+        {
+            //現在フレームが変更された時の処理
+            PreViewRefresh();
+            
+        }
+        private void PreViewRefresh()
+        {
+            //全体再描画
+            panel_Control.Refresh();
+            panel_Time.Refresh();
+        }
+
+        private void CheckCross_CheckStateChanged(object sender, EventArgs e)
+        {
+            panel_Control.Refresh();
+        }
+
+        private void panel_Control_DragDrop(object sender, DragEventArgs e)
+        {
         }
     }
 
@@ -251,5 +320,6 @@ namespace PrjHikariwoAnim
 
     public class ClsCell
     {
+
     }
 }
