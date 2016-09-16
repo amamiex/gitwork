@@ -34,6 +34,7 @@ namespace PrjHikariwoAnim
 
             this.mFormAttribute = new FormAttribute();
             this.mFormAttribute.Show();
+
         }
 
         private void TSMenu_ImageList_Click(object sender, EventArgs e)

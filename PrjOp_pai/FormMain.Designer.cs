@@ -105,7 +105,7 @@
             this.TSMenu_ImageList.Checked = true;
             this.TSMenu_ImageList.CheckState = System.Windows.Forms.CheckState.Checked;
             this.TSMenu_ImageList.Name = "TSMenu_ImageList";
-            this.TSMenu_ImageList.Size = new System.Drawing.Size(146, 22);
+            this.TSMenu_ImageList.Size = new System.Drawing.Size(152, 22);
             this.TSMenu_ImageList.Text = "イメージリスト(&I)";
             this.TSMenu_ImageList.Click += new System.EventHandler(this.TSMenu_ImageList_Click);
             // 
@@ -114,7 +114,7 @@
             this.TSMenu_Control.Checked = true;
             this.TSMenu_Control.CheckState = System.Windows.Forms.CheckState.Checked;
             this.TSMenu_Control.Name = "TSMenu_Control";
-            this.TSMenu_Control.Size = new System.Drawing.Size(146, 22);
+            this.TSMenu_Control.Size = new System.Drawing.Size(152, 22);
             this.TSMenu_Control.Text = "コントロール(&C)";
             this.TSMenu_Control.Click += new System.EventHandler(this.TSMenu_Control_Click);
             // 
@@ -123,13 +123,13 @@
             this.TSMenu_Attribute.Checked = true;
             this.TSMenu_Attribute.CheckState = System.Windows.Forms.CheckState.Checked;
             this.TSMenu_Attribute.Name = "TSMenu_Attribute";
-            this.TSMenu_Attribute.Size = new System.Drawing.Size(146, 22);
+            this.TSMenu_Attribute.Size = new System.Drawing.Size(152, 22);
             this.TSMenu_Attribute.Text = "アトリビュート(&A)";
             this.TSMenu_Attribute.Click += new System.EventHandler(this.TSMenu_Attribute_Click);
             // 
             // statusStrip
             // 
-            this.statusStrip.Location = new System.Drawing.Point(0, 202);
+            this.statusStrip.Location = new System.Drawing.Point(0, 162);
             this.statusStrip.Name = "statusStrip";
             this.statusStrip.Size = new System.Drawing.Size(401, 22);
             this.statusStrip.TabIndex = 1;
@@ -145,7 +145,7 @@
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(401, 224);
+            this.ClientSize = new System.Drawing.Size(401, 184);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.menuStrip);
             this.Cursor = System.Windows.Forms.Cursors.Default;

@@ -11,6 +11,7 @@ namespace PrjHikariwoAnim
 {
     public partial class FormAttribute : Form
     {
+
         //一時記録用
         //AllSet,AllGet時に更新
         private AttributeBase ValuesPool;
