@@ -246,12 +246,13 @@
             // 
             // checkX
             // 
+            this.checkX.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkX.AutoSize = true;
             this.checkX.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.checkX.Location = new System.Drawing.Point(5, 5);
             this.checkX.Margin = new System.Windows.Forms.Padding(0);
             this.checkX.Name = "checkX";
-            this.checkX.Size = new System.Drawing.Size(69, 20);
+            this.checkX.Size = new System.Drawing.Size(60, 26);
             this.checkX.TabIndex = 31;
             this.checkX.Text = "Ｘ座標";
             this.checkX.UseVisualStyleBackColor = true;
